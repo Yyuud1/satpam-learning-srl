@@ -28,7 +28,58 @@ dialog{border:1px solid #fff;border-radius:24px;padding:0;width:min(620px,calc(1
 @media(max-width:780px){.app-shell{display:block;border:0;margin:0;border-radius:0;min-height:100dvh;overflow:visible}.sidebar{position:fixed;z-index:50;width:250px;left:0;top:0;height:100dvh;transform:translateX(-105%);transition:transform .25s;box-shadow:10px 0 35px #70516322}.app-shell.menu-open .sidebar{transform:none}.menu-overlay{position:fixed;inset:0;background:#5c405755;z-index:49}.menu-open .menu-overlay{display:block}.mobile-only{display:initial}.topbar{height:69px;padding:0 18px;background:#fffafa}.breadcrumb{display:none}.page{padding:20px 17px 35px}.welcome{padding:23px 20px;min-height:215px}.welcome .copy{width:65%}.welcome h1{font-size:22px}.welcome .subtitle{font-size:11px;line-height:1.6}.welcome blockquote{font-size:10px}.welcome .dash{margin:13px 0}.welcome .portrait{width:32%;right:0;object-position:50% 28%}.welcome .portrait.cutout{width:45%;height:158%;right:-3%;top:-34%}.stats{gap:9px}.stat{display:block;padding:12px 10px}.stat .tile{width:33px;height:33px;border-radius:10px;margin-bottom:8px}.stat .tile .icon{width:20px;height:20px}.stat strong{font-size:14px}.stat small{font-size:10px}.testcard{padding:19px}.grid2{gap:13px}.testcard h3{font-size:18px}.testcard>.row{gap:11px;align-items:flex-start}.testcard .tile{width:40px;height:40px;border-radius:12px}.testcard .tile .icon{width:24px}.testcard .btn{padding:11px 12px;font-size:12px}.section-title h2{font-size:17px}.material-list{padding:6px 16px}.login-wrap{padding:17px 13px;display:block}.login-card{display:block;padding:10px;max-width:500px;margin:auto;border-radius:24px}.login-story{min-height:205px;padding:20px;overflow:hidden}.login-story .logo{width:150px}.login-story .brand small{font-size:10px}.login-story h1{font-size:22px;margin-top:22px;position:relative;z-index:2;max-width:65%}.login-story .lead{font-size:10px;max-width:57%;margin-top:7px}.login-story .portrait{height:145px;width:32%;right:4%;object-position:50% 29%}.login-story .portrait.cutout{height:220px;width:42%;right:-1%;bottom:-7px}.story-pill{display:none}.login-form{padding:25px 17px 15px}.login-form>.tile{width:49px;height:49px;margin-bottom:13px;border-radius:15px}.login-form .intro{margin-bottom:23px}.login-form .intro h2{font-size:24px}.login-form .intro p{font-size:11px}.login-form footer{font-size:10px;margin-top:18px}.login-base{font-size:9px;padding:14px 10px 3px;justify-content:center;gap:10px}.quiz-layout{display:flex;flex-direction:column}.quiz-card{padding:21px 18px}.quiz-card h2{font-size:18px}.quiz-aside{order:2}.quiz-aside .question-nav{grid-template-columns:repeat(10,1fr)}.quiz-top{margin-bottom:16px}.quiz-top h2{font-size:17px}.answer{padding:14px 12px;font-size:13px}.admin-grid,.setup-layout{grid-template-columns:1fr}.modal-body{padding:19px}.modal-head{padding:16px 19px}.card{padding:19px}.material-list{padding:7px 16px}.toolbar .btn{font-size:12px}.profilebtn>span.name{max-width:135px;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}.grid3.adminstats{grid-template-columns:repeat(3,1fr)}.adminstats .card{padding:14px}.adminstats h2{font-size:24px}.adminstats p{font-size:10px}}
 @media(max-width:430px){.grid2.test-grid{grid-template-columns:1fr}.testcard>.row{align-items:center}.testcard .details{margin:12px 0}.welcome h1{font-size:19px}.welcome{min-height:209px}.welcome blockquote{max-width:200px}.grid2.form-grid{grid-template-columns:1fr}.quiz-aside .question-nav{grid-template-columns:repeat(5,1fr)}.login-story h1{font-size:20px}.login-base span:last-child{display:none}.profilebtn .name{max-width:105px}.quiz-footer .btn{font-size:12px;padding:12px}.page>.grid2:not(.test-grid){grid-template-columns:1fr}}
 @media(prefers-reduced-motion:reduce){*,*::before,*::after{animation:none!important;transition:none!important;scroll-behavior:auto!important}}
-@media print{body>*{display:none!important}body>.print-area{display:block!important;color:#3e3c48;background:white;font-size:10pt}body{background:white}.print-area h1{font-size:19pt;letter-spacing:0}.print-area h2{font-size:13pt;margin:18px 0 8px}.print-area p{margin:6px 0}.print-area table{font-size:9pt}.print-area th,.print-area td{padding:6px;border:1px solid #ddd}.print-area .report-img{width:45%;max-height:220px;object-fit:contain;margin:8px;break-inside:avoid}.print-area .event-block{break-inside:avoid}.print-area .logo{width:140px;margin-bottom:18px}@page{size:A4;margin:15mm}}
+@media print{
+ @page{size:A4 portrait;margin:13mm 12mm 19mm}
+ html,body{height:auto!important;min-height:0!important;background:#fff!important;margin:0!important;padding:0!important}
+ body>*{display:none!important}
+ body>.print-area{display:block!important;width:100%;color:#49434d;background:#fff;font-family:Poppins,Arial,sans-serif;font-size:9pt;line-height:1.5;-webkit-print-color-adjust:exact;print-color-adjust:exact}
+ .print-area *{box-sizing:border-box;box-shadow:none!important;text-shadow:none!important;animation:none!important;transition:none!important}
+ .print-area .r-header{border-top:4px solid #b75370;border-bottom:1px solid #e9d9df;padding:14px 0 13px;margin-bottom:13px;break-inside:avoid}
+ .print-area .r-brandline{display:flex;justify-content:space-between;align-items:center;margin-bottom:17px;gap:16px}
+ .print-area .r-logo{display:block;width:135px;height:42px;object-fit:contain;object-position:left center;margin:0}
+ .print-area .r-edition{text-align:right;font-size:7pt;letter-spacing:.6px;color:#8c7580;line-height:1.7}
+ .print-area .r-kicker{font-size:7pt;letter-spacing:1.5px;color:#a15c72;text-transform:uppercase;margin:0 0 6px;font-weight:600}
+ .print-area h1{font-size:23pt;font-weight:600;line-height:1.2;letter-spacing:-.6px;color:#49434d;margin:0 0 7px}
+ .print-area .r-subtitle{font-size:10pt;color:#9d536c;font-weight:500;margin:0}
+ .print-area p{margin:0 0 7px}
+ .print-area .r-meta{width:100%;border-collapse:collapse;font-size:8pt;table-layout:fixed;margin:0 0 13px}
+ .print-area .r-meta th,.print-area .r-meta td{border:0;border-bottom:1px solid #eee4e8;padding:7px 9px;white-space:normal;text-align:left;vertical-align:top;overflow-wrap:anywhere}
+ .print-area .r-meta th{width:23%;font-weight:500;background:#faf2f5;color:#92546b}
+ .print-area .r-demo{border:1px solid #c18455;background:#fff4de;color:#825434;padding:9px 12px;margin:12px 0;font-weight:600;font-size:8pt;break-inside:avoid}
+ .print-area .r-kpis{width:100%;border-collapse:separate;border-spacing:5px 0;table-layout:fixed;margin:13px -5px 8px;break-inside:avoid}
+ .print-area .r-kpis td{background:#fbf0f4;border:1px solid #ead5de;border-radius:7px;padding:10px 11px;vertical-align:top;white-space:normal}
+ .print-area .r-kpis strong{display:block;color:#a74f6a;font-size:20pt;line-height:1.15;font-weight:600;margin-bottom:4px}
+ .print-area .r-kpis span{font-size:7pt;color:#7d6c77}
+ .print-area .r-section{font-size:12pt;font-weight:600;letter-spacing:-.15px;color:#684856;margin:19px 0 9px;break-after:avoid;page-break-after:avoid}
+ .print-area .r-section span{color:#b97087;font-size:8pt;letter-spacing:.8px;margin-right:9px}
+ .print-area .r-table{width:100%;table-layout:fixed;border-collapse:collapse;font-size:8pt;margin:0 0 10px}
+ .print-area .r-table thead{display:table-header-group}
+ .print-area .r-table th,.print-area .r-table td{padding:8px 8px;border:1px solid #e5dce1;vertical-align:top;text-align:left;white-space:normal;overflow-wrap:anywhere;word-break:normal}
+ .print-area .r-table th{background:#f5e5eb;color:#844b60;font-weight:600;font-size:7.5pt}
+ .print-area .r-table tbody tr:nth-child(even) td{background:#fdf8fa}
+ .print-area .r-table .r-center{text-align:center;font-variant-numeric:tabular-nums}
+ .print-area .r-table.r-scores tr,.print-area .r-photo-table tr{break-inside:avoid;page-break-inside:avoid}
+ .print-area .r-scores th,.print-area .r-scores td{padding:6px 8px}
+ .print-area .r-number{font-weight:600;color:#5c4b57}
+ .print-area .r-pending{font-size:7pt;color:#8b7b84;font-weight:400}
+ .print-area .r-note{font-size:7pt;color:#8a7882;line-height:1.65;margin:7px 0 12px}
+ .print-area .r-empty{text-align:center!important;padding:15px!important;color:#8a7882}
+ .print-area .r-event-name{font-weight:600;color:#614b57;margin:0 0 4px}
+ .print-area .r-event-meta{font-size:7pt;color:#8c7580;margin-bottom:5px}
+ .print-area .r-summary{white-space:pre-wrap;overflow-wrap:anywhere;margin:0;font-size:8pt;line-height:1.6}
+ .print-area .r-attendees{padding:0;margin:0;list-style:none;font-size:8pt;line-height:1.7}
+ .print-area .r-photo-table{width:100%;table-layout:fixed;border-collapse:separate;border-spacing:8px;font-size:8pt;margin:-8px 0 10px;break-before:auto}
+ .print-area .r-photo-table td{width:50%;vertical-align:top;border:1px solid #e5dce1;background:#fff;padding:9px;white-space:normal;overflow-wrap:anywhere}
+ .print-area .r-photo-table td.r-photo-blank{border:0;background:transparent}
+ .print-area .r-photo{display:block;width:100%;height:36mm;max-width:100%;object-fit:contain;margin:0 0 7px;background:#faf7f8}
+ .print-area .r-photo-caption{font-size:7pt;color:#836d78;margin:0;line-height:1.6}
+ .print-area .r-photo-caption b{font-weight:600;color:#654c59}
+ .print-area .r-file-placeholder{height:26mm;display:flex;align-items:center;justify-content:center;border:1px dashed #dcc4cf;background:#fbf5f7;color:#916476;text-align:center;padding:12px;margin-bottom:8px;font-size:8pt}
+ .print-area .r-footer{position:static;clear:both;border-top:1px solid #ddc8d2;margin:12px 0 0;padding-top:7px;font-size:7pt;line-height:1.5;color:#8a7882;background:#fff;break-inside:avoid;page-break-inside:avoid}
+ .print-area .r-footer strong{color:#a46079;font-weight:500}
+}
+
+
 .welcome .portrait[data-photo-dummy]{width:30%;height:88%;top:auto;bottom:0;right:4%;object-fit:contain;object-position:center bottom;filter:none;border-radius:0}
 /* Loading pembuka */
 .launch-screen{position:fixed;inset:0;z-index:9999;display:flex;align-items:center;justify-content:center;background:radial-gradient(ellipse at 0 0,#f9e0e680,transparent 52%),radial-gradient(ellipse at 100% 100%,#f7dfe680,transparent 52%),#fff9fa;transition:opacity .45s ease,visibility .45s ease;color:var(--ink);padding:24px;text-align:center}
@@ -386,7 +437,54 @@ function eventEdit(id){const e=state.events.find(x=>x.id===id)||{day:new Date().
 function settingsView(){const s=state.settings;return `<div class="section-title" style="margin-top:0"><h2>Pengaturan</h2>${badge('Khusus panitia','rose')}</div><div class="admin-grid"><form id="settings-form" class="card stack"><h3>Identitas kegiatan</h3>${inputField('Kantor / unit kerja','branch',s.branch,'text','required maxlength="120"')}<div class="grid2 form-grid">${inputField('Mulai pelatihan','training_start',s.training_start,'date','required')}${inputField('Akhir pelatihan','training_end',s.training_end,'date','required')}</div>${inputField('Batas laporan','report_date',s.report_date,'date','required')}<label class="check"><input type="checkbox" name="release_review" ${s.release_review?'checked disabled':''}>Buka pembahasan setelah semua tes selesai</label><p class="small muted">Pembahasan yang sudah dibuka tidak dapat dirahasiakan kembali. Sesi dan pengulangan akan terkunci.</p><button type="submit" class="btn primary">Simpan pengaturan</button></form><div class="card"><h3>Catatan aktivitas admin</h3>${state.audit?.length?`<div style="max-height:390px;overflow:auto">${state.audit.slice(0,20).map(a=>`<div class="question-item"><div><b class="small">${esc(a.action)}</b><p class="muted small">${date(a.created_at,true)} WIB</p>${a.detail?.reason?`<small>${esc(a.detail.reason)}</small>`:''}</div></div>`).join('')}</div>`:empty('Belum ada catatan','Tindakan admin akan dicatat.','shield')}</div></div>`}
 function csvCell(v){let s=String(v??'');if(/^[\s]*[=+\-@]/.test(s))s="'"+s;return '"'+s.replace(/"/g,'""')+'"'}
 function exportResults(){const rows=[['Nama','Unit','Nilai Pretest','Nilai Posttest','Selisih Poin','Pretest Selesai (WIB)','Posttest Selesai (WIB)'],...pairedRows().map(({p,pre,post})=>[p.name,p.unit,pre?.submitted_at?pre.score:'Belum selesai',post?.submitted_at?post.score:'Belum selesai',pre?.submitted_at&&post?.submitted_at?post.score-pre.score:'',pre?.submitted_at?date(pre.submitted_at,true):'',post?.submitted_at?date(post.submitted_at,true):''])];download('rekap-pretest-posttest.csv','\ufeff'+rows.map(r=>r.map(csvCell).join(';')).join('\r\n'),'text/csv;charset=utf-8')}
-async function printReport(){const rows=pairedRows();let docHTML='';for(const e of state.events){let pics='';for(const d of e.docs){if(d.type?.startsWith('image/')&&!demo){const url=await signed(d.path);pics+=`<img class="report-img" src="${esc(url)}" alt="${esc(d.name)}">`}else pics+=`<p>Lampiran: ${esc(d.name)}</p>`}docHTML+=`<section class="event-block"><h2>${date(e.day)} — ${esc(e.topic)}</h2><p>Unit: ${esc(e.unit)}<br>Pemateri: ${esc(e.speaker)}<br>Jumlah peserta hadir: ${e.attendee_ids.length}</p><p class="prewrap">${esc(e.summary)}</p><p><b>Absensi:</b> ${e.attendee_ids.map(id=>esc(state.participants.find(p=>p.id===id)?.name||'Peserta tidak ditemukan')).join(', ')||'Belum dicatat'}</p>${pics}</section>`}const paired=rows.filter(r=>r.pre?.submitted_at&&r.post?.submitted_at);const avg=paired.length?num(paired.reduce((n,r)=>n+r.post.score-r.pre.score,0)/paired.length):'—';$('#print-area').innerHTML=`<img src="${embedded.logo}" class="logo" alt="Bank Jambi"><h1>Laporan Pelatihan Satpam</h1><p><b>${esc(state.settings.branch)}</b><br>Periode: ${date(state.settings.training_start)} — ${date(state.settings.training_end)}<br>Batas laporan: ${date(state.settings.report_date)}</p><p>Ditujukan kepada Direksi Bank Jambi c.q. CMO Divisi Perencanaan Strategik dan Kinerja serta Divisi Sumber Daya Manusia.</p>${demo?'<p><b>SIMULASI DEMO — BUKAN LAPORAN RESMI</b></p>':''}<h2>Hasil dan evaluasi</h2><p>Peserta terdaftar: ${rows.length}. Peserta dengan kedua tes selesai: ${paired.length}. Rerata selisih nilai pasangan: ${avg} poin.</p><table><thead><tr><th>Nama</th><th>Unit</th><th>Pretest</th><th>Posttest</th><th>Selisih</th></tr></thead><tbody>${rows.map(({p,pre,post})=>`<tr><td>${esc(p.name)}</td><td>${esc(p.unit)}</td><td>${pre?.submitted_at?num(pre.score):'Belum selesai'}</td><td>${post?.submitted_at?num(post.score):'Belum selesai'}</td><td>${pre?.submitted_at&&post?.submitted_at?num(post.score-pre.score):'—'}</td></tr>`).join('')}</tbody></table><h2>Pelaksanaan, dokumentasi, dan absensi</h2>${docHTML||'<p>Kegiatan belum dicatat. Lengkapi pemateri, materi, ringkasan, dokumentasi, dan absensi sebelum mengirim laporan.</p>'}<p style="margin-top:25px">Dicetak: ${date(new Date().toISOString(),true)} WIB</p>`;await Promise.all($$('#print-area img').map(img=>img.complete?Promise.resolve():new Promise(resolve=>{img.onload=img.onerror=resolve;setTimeout(resolve,10000)})));window.print()}
+function reportScore(attempt){return attempt?.submitted_at?`<span class="r-number">${esc(num(attempt.score))}</span>`:`<span class="r-pending">${attempt?'Belum selesai':'Belum mengikuti'}</span>`}
+function reportDelta(pre,post){if(!pre?.submitted_at||!post?.submitted_at)return '—';const delta=post.score-pre.score;return (delta>0?'+':'')+num(delta)}
+function reportTable(headers,body,widths,extra=''){return `<table class="r-table ${extra}"><colgroup>${widths.map(w=>`<col style="width:${w}%">`).join('')}</colgroup><thead><tr>${headers.map(h=>`<th scope="col">${h}</th>`).join('')}</tr></thead><tbody>${body||`<tr><td class="r-empty" colspan="${headers.length}">Belum ada data.</td></tr>`}</tbody></table>`}
+function reportPhotoFailed(img){if(img.dataset.reportFailed)return;img.dataset.reportFailed='1';const box=document.createElement('div');box.className='r-file-placeholder';box.textContent='Pratinjau foto tidak tersedia';img.replaceWith(box)}
+async function waitReportImages(area){await Promise.all(Array.from(area.querySelectorAll('img')).map(img=>new Promise(resolve=>{
+ let done=false;const finish=()=>{if(done)return;done=true;clearTimeout(timer);img.removeEventListener('load',loaded);img.removeEventListener('error',failed);resolve()};
+ const loaded=()=>finish(),failed=()=>{if(img.classList.contains('r-photo'))reportPhotoFailed(img);else img.remove();finish()};
+ const timer=setTimeout(failed,12000);img.addEventListener('load',loaded,{once:true});img.addEventListener('error',failed,{once:true});if(img.complete){if(img.naturalWidth>0)loaded();else failed()}
+})));}
+async function printReport(){
+ const rows=pairedRows(),events=state.events||[],settings=state.settings;
+ const paired=rows.filter(r=>r.pre?.submitted_at&&r.post?.submitted_at);
+ const preDone=rows.filter(r=>r.pre?.submitted_at).length,postDone=rows.filter(r=>r.post?.submitted_at).length;
+ const average=paired.length?paired.reduce((n,r)=>n+r.post.score-r.pre.score,0)/paired.length:null;
+ const averageLabel=average==null?'—':(average>0?'+':'')+num(average);
+ const printedAt=date(new Date().toISOString(),true);
+ const participantMap=new Map(state.participants.map(p=>[p.id,p]));
+ // Resolve all attachments independently: a broken image must not block the report.
+ const attachments=await Promise.all(events.flatMap((event,eventIndex)=>(event.docs||[]).map(async(doc,docIndex)=>{
+  let url='';if(doc.type?.startsWith('image/')&&!demo){let timeout;try{url=await Promise.race([signed(doc.path),new Promise((_,reject)=>{timeout=setTimeout(()=>reject(new Error('Pratinjau lampiran melewati batas waktu')),8000)})])}catch{}finally{clearTimeout(timeout)}}
+  return {event,eventIndex,doc,docIndex,url};
+ })));
+ const scoreRows=rows.map(({p,pre,post},i)=>`<tr><td class="r-center">${i+1}</td><td><b>${esc(p.name)}</b></td><td>${esc(p.unit)}</td><td class="r-center">${reportScore(pre)}</td><td class="r-center">${reportScore(post)}</td><td class="r-center r-number">${esc(reportDelta(pre,post))}</td></tr>`).join('');
+ const eventRows=events.map((event,i)=>`<tr><td class="r-center">${i+1}</td><td><div class="r-event-name">${esc(date(event.day))}</div>${esc(event.unit)}</td><td>${esc(event.speaker||'Belum diisi')}</td><td><div class="r-event-name">${esc(event.topic)}</div><div class="r-summary">${esc(event.summary||'Ringkasan belum diisi.')}</div></td><td class="r-center">${(event.attendee_ids||[]).length}</td></tr>`).join('');
+ const attendanceRows=events.map((event,i)=>`<tr><td class="r-center">${i+1}</td><td><div class="r-event-name">${esc(event.unit)}</div><div class="r-event-meta">${esc(date(event.day))}</div>${esc(event.topic)}</td><td><ul class="r-attendees">${(event.attendee_ids||[]).map((id,j)=>`<li>${j+1}. ${esc(participantMap.get(id)?.name||'Peserta tidak ditemukan')}</li>`).join('')||'<li>Belum dicatat.</li>'}</ul></td></tr>`).join('');
+ const photoCells=attachments.map(({event,eventIndex,doc,docIndex,url})=>`<td>${url?`<img class="r-photo" src="${esc(url)}" alt="${esc(doc.name||'Dokumentasi kegiatan')}">`:`<div class="r-file-placeholder">${doc.type?.startsWith('image/')?'Pratinjau foto tidak tersedia':'Lampiran PDF / dokumen'}</div>`}<p class="r-photo-caption"><b>Kegiatan ${eventIndex+1} · ${esc(event.unit)}</b><br>${esc(date(event.day))} · Lampiran ${docIndex+1}<br>${esc(doc.name||'Dokumentasi')}</p></td>`);
+ let photoRows='';for(let i=0;i<photoCells.length;i+=2)photoRows+=`<tr>${photoCells[i]}${photoCells[i+1]||'<td class="r-photo-blank"></td>'}</tr>`;
+ const area=$('#print-area');
+ area.innerHTML=`<header class="r-header"><div class="r-brandline"><img class="r-logo" src="${esc(embedded.logo)}" alt="Bank Jambi"><div class="r-edition">SATPAM LEARNING<br>REKAP PELATIHAN & EVALUASI</div></div><p class="r-kicker">Belajar hari ini. Melayani lebih baik.</p><h1>Laporan Pelatihan Satpam</h1><p class="r-subtitle">${esc(settings.branch)}</p></header>
+ ${demo?'<div class="r-demo">SIMULASI DEMO - BUKAN LAPORAN RESMI</div>':''}
+ <table class="r-meta"><tbody><tr><th scope="row">Periode pelatihan</th><td>${esc(date(settings.training_start))} - ${esc(date(settings.training_end))}</td></tr><tr><th scope="row">Batas laporan</th><td>${esc(date(settings.report_date))}</td></tr><tr><th scope="row">Ditujukan kepada</th><td>Direksi Bank Jambi c.q. CMO Divisi Perencanaan Strategik dan Kinerja serta Divisi Sumber Daya Manusia.</td></tr></tbody></table>
+ <table class="r-kpis" aria-label="Ringkasan evaluasi"><tbody><tr><td><strong>${rows.length}</strong><span>Peserta terdaftar</span></td><td><strong>${preDone}</strong><span>Pretest selesai</span></td><td><strong>${postDone}</strong><span>Posttest selesai</span></td><td><strong>${esc(averageLabel)}</strong><span>Rerata perubahan (poin)</span></td></tr></tbody></table>
+ <p class="r-note">Rerata perubahan dihitung dari ${paired.length} peserta yang telah menyelesaikan kedua tes. Skala nilai 0-100.</p>
+ <h2 class="r-section"><span>01</span>Hasil dan evaluasi peserta</h2>
+ ${reportTable(['No.','Nama peserta','Unit kerja','Pretest','Posttest','Selisih<br>(poin)'],scoreRows,[6,25,24,15,15,15],'r-scores')}
+ <p class="r-note">Selisih = posttest - pretest. Tanda positif menunjukkan kenaikan nilai. Tanda — berarti pasangan nilai belum lengkap. Nilai 0 berbeda dari belum mengikuti tes. Rekap memakai pengerjaan aktif; riwayat yang diarsipkan tidak dihitung.</p>
+ <h2 class="r-section"><span>02</span>Pelaksanaan kegiatan</h2>
+ ${reportTable(['No.','Tanggal / unit','Pemateri','Topik & ringkasan','Hadir'],eventRows,[6,23,22,39,10])}
+ <h2 class="r-section"><span>03</span>Daftar hadir kegiatan</h2>
+ ${reportTable(['No.','Kegiatan / unit','Nama peserta hadir'],attendanceRows,[6,42,52])}
+ <p class="r-note">Absensi dicatat oleh panitia dan terpisah dari status pengerjaan tes.</p>
+ <h2 class="r-section"><span>04</span>Dokumentasi kegiatan</h2>
+ ${photoRows?`<table class="r-photo-table" aria-label="Dokumentasi kegiatan"><tbody>${photoRows}</tbody></table>`:reportTable(['Dokumentasi'],'<tr><td class="r-empty">Belum ada dokumentasi terlampir.</td></tr>',[100])}
+ <footer class="r-footer"><strong>SATPAM LEARNING</strong> · ${esc(settings.branch)}<br>Dicetak: ${esc(printedAt)} WIB · Created by yudagrh</footer>`;
+ await waitReportImages(area);
+ if(document.fonts?.ready)await Promise.race([document.fonts.ready,new Promise(resolve=>setTimeout(resolve,2000))]);
+ window.print();
+}
 // Data simulasi publik. Jangan digunakan sebagai bank soal rahasia produksi.
 const DEMO_RAW=[
 ['Produk Dana','Produk simpanan yang memiliki jangka waktu penempatan tertentu disebut …',['Tabungan','Deposito','Kredit','Pembiayaan'],1,'Deposito merupakan simpanan berjangka. Ketentuan produk mengikuti informasi resmi bank.'],
